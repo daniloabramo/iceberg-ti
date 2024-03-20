@@ -1,0 +1,184 @@
+@import 'root';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+section.informations{
+    height: 60vh;
+    padding: 0.3rem;
+    background: $background;
+    border-radius: 0rem 0rem 1rem 1rem;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav{
+            button{
+                height: 2rem;
+                width: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.1rem;
+                border-radius: 50%;
+                border: none;
+                background: none;
+                cursor: pointer;
+
+                svg{
+                    width: 24px;
+                    height: 24px;
+                    
+                    path{
+                        fill: $icon;
+                    }
+                }
+            }
+        }
+        
+        h1{
+            font-family: 'Inter';
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: $text;
+        }
+    }
+
+    h2{
+        font-family: 'Inter';
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text;
+    }
+
+    .img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        svg{
+            margin-top: 0.3rem;
+            padding: 0.3rem;
+            height: 9rem;
+            width: 9rem;
+        }
+    }
+
+    .author{
+        display: flex;
+        align-items: center;
+        font-family: 'Inter';
+        font-size: 0.8rem;
+        color: $text;
+
+        a{
+            margin-left: 0.2rem;
+            font-weight: 500;
+            color: $text;
+        }
+    }
+
+    .actions{
+        display: flex;
+        justify-content: space-between;
+
+        .social-media{
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+
+            button{
+                width: 2.3rem;
+                height: 2.3rem;
+                padding: 0.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+
+                    path{
+                        fill: $icon;
+                    }
+                }
+            }
+
+            button:hover path{
+                fill: aqua;
+            }
+
+        }
+    }
+
+    .line{
+        width: 100%;
+        height: 0.1rem;
+        background: $icon;
+        margin-top: 1rem;
+    }
+
+    .important{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4{
+            font-family: 'Inter';
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 0.2rem;
+            color: $icon;
+        }
+
+    }
+
+    .read{
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        
+        svg{
+            width: 1.7rem
+        }
+
+        path{
+            fill: $icon;
+        }
+
+    }
+
+    .scroll{
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        
+        svg{
+            width: 1.7rem
+        }
+
+        path{
+            fill: $icon;
+        }
+        
+
+    }
+
+
+}
+
+

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Mega:wght@700;800;900&family=Open+Sans:wght@300..800&family=Outfit:wght@100&family=Share+Tech+Mono&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+section.informations {
+  height: 60vh;
+  padding: 0.3rem;
+  background: #255fef;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+section.informations .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.informations .header nav button {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+section.informations .header nav button svg {
+  width: 24px;
+  height: 24px;
+}
+section.informations .header nav button svg path {
+  fill: white;
+}
+section.informations .header h1 {
+  font-family: "Inter";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+section.informations h2 {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+section.informations .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section.informations .img svg {
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+  height: 9rem;
+  width: 9rem;
+}
+section.informations .author {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 0.8rem;
+  color: white;
+}
+section.informations .author a {
+  margin-left: 0.2rem;
+  font-weight: 500;
+  color: white;
+}
+section.informations .actions {
+  display: flex;
+  justify-content: space-between;
+}
+section.informations .actions .social-media {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+section.informations .actions .social-media button {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+section.informations .actions .social-media button svg {
+  width: 30px;
+  height: 30px;
+}
+section.informations .actions .social-media button svg path {
+  fill: white;
+}
+section.informations .actions .social-media button:hover path {
+  fill: aqua;
+}
+section.informations .line {
+  width: 100%;
+  height: 0.1rem;
+  background: white;
+  margin-top: 1rem;
+}
+section.informations .important {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.informations .important h4 {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 0.2rem;
+  color: white;
+}
+section.informations .read {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+section.informations .read svg {
+  width: 1.7rem;
+}
+section.informations .read path {
+  fill: white;
+}
+section.informations .scroll {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+section.informations .scroll svg {
+  width: 1.7rem;
+}
+section.informations .scroll path {
+  fill: white;
+}/*# sourceMappingURL=usuario.css.map */
