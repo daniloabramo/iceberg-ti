@@ -10,8 +10,9 @@ body {
 }
 
 section.informations {
-  height: 60vh;
-  padding: 0.3rem;
+  height: 58vh;
+  padding: 0.5rem;
+  padding-top: 0.2rem;
   background: #255fef;
   border-radius: 0rem 0rem 1rem 1rem;
 }
@@ -21,7 +22,7 @@ section.informations header {
 }
 section.informations header h1 {
   font-family: "Inter";
-  font-size: 8vh;
+  font-size: 7vh;
   text-transform: uppercase;
   color: white;
 }
@@ -73,10 +74,9 @@ section.informations .img {
   justify-content: center;
 }
 section.informations .img svg {
-  margin-top: 0.3rem;
+  margin-top: 1vh;
   padding: 0.3rem;
-  height: 9rem;
-  width: 9rem;
+  height: 25vh;
 }
 section.informations .actions {
   display: flex;
@@ -84,26 +84,33 @@ section.informations .actions {
 }
 section.informations .actions .social-media {
   display: flex;
-  width: 1.5rem;
-  height: 1.5rem;
 }
 section.informations .actions .social-media button {
-  width: 2.3rem;
-  height: 2.3rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
+  margin-right: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
+  background: none;
 }
 section.informations .actions .social-media button svg {
-  width: 30px;
-  height: 30px;
+  width: 4.8vh;
+  height: 4.8vh;
 }
 section.informations .actions .social-media button svg path {
   fill: white;
+}
+section.informations .actions .social-media button:hover {
+  animation: fly 2s infinite;
+}
+@keyframes fly {
+  50% {
+    transform: translateY(-0.8vh);
+  }
 }
 section.informations .actions .social-media button:hover path {
   fill: aqua;
@@ -112,9 +119,10 @@ section.informations .line {
   width: 100%;
   height: 0.1rem;
   background: white;
-  margin-top: 1rem;
+  margin-top: 1.5vh;
 }
 section.informations .important {
+  height: 7.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,25 +134,53 @@ section.informations .important h4 {
   margin-left: 0.2rem;
   color: white;
 }
-section.informations .read {
-  margin-top: 0.5rem;
+section.informations .important .read {
   display: flex;
   align-items: center;
 }
-section.informations .read svg {
+section.informations .important .read svg {
   width: 1.7rem;
 }
-section.informations .read path {
+section.informations .important .read path {
   fill: white;
 }
-section.informations .scroll {
-  margin-top: 0.5rem;
+section.informations .important .scroll {
   display: flex;
   align-items: center;
 }
-section.informations .scroll svg {
+section.informations .important .scroll svg {
   width: 1.7rem;
 }
-section.informations .scroll path {
+section.informations .important .scroll path {
   fill: white;
+}
+
+section.introduction {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+section.introduction h1 {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+  color: #255fef;
+}
+section.introduction p {
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  text-align: justify;
+  color: black;
+  margin-bottom: 2vh;
+}
+
+@media (min-width: 359px) and (min-height: 870px) {
+  section.informations {
+    background: red;
+  }
+  section.informations .title h1 {
+    font-size: 1vh;
+  }
 }/*# sourceMappingURL=usuario.css.map */
