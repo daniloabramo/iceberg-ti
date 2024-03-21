@@ -15,12 +15,20 @@ section.informations {
   background: #255fef;
   border-radius: 0rem 0rem 1rem 1rem;
 }
-section.informations .header {
+section.informations header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-section.informations .header nav button {
+section.informations header h1 {
+  font-family: "Inter";
+  font-size: 8vh;
+  text-transform: uppercase;
+  color: white;
+}
+section.informations header nav {
+  margin-top: 0.8vh;
+}
+section.informations header nav button {
   height: 2rem;
   width: 2rem;
   display: flex;
@@ -32,27 +40,34 @@ section.informations .header nav button {
   background: none;
   cursor: pointer;
 }
-section.informations .header nav button svg {
+section.informations header nav button svg {
   width: 24px;
   height: 24px;
 }
-section.informations .header nav button svg path {
+section.informations header nav button svg path {
   fill: white;
-}
-section.informations .header h1 {
-  font-family: "Inter";
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: white;
 }
 section.informations h2 {
   font-family: "Inter";
-  font-size: 2rem;
+  font-size: 2.5vh;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
 }
+section.informations .author {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 2.5vh;
+  color: white;
+}
+section.informations .author a {
+  margin-left: 0.2rem;
+  font-weight: 500;
+  color: white;
+}
 section.informations .img {
+  margin: 2vh 0vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -62,18 +77,6 @@ section.informations .img svg {
   padding: 0.3rem;
   height: 9rem;
   width: 9rem;
-}
-section.informations .author {
-  display: flex;
-  align-items: center;
-  font-family: "Inter";
-  font-size: 0.8rem;
-  color: white;
-}
-section.informations .author a {
-  margin-left: 0.2rem;
-  font-weight: 500;
-  color: white;
 }
 section.informations .actions {
   display: flex;

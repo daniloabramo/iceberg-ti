@@ -16,12 +16,20 @@ section.informations{
     background: $background;
     border-radius: 0rem 0rem 1rem 1rem;
 
-    .header{
+    header{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
+        h1{
+            font-family: 'Inter';
+            font-size: 8vh;
+            text-transform: uppercase;
+            color: $text;
+        }
 
         nav{
+            margin-top: 0.8vh;
+            
             button{
                 height: 2rem;
                 width: 2rem;
@@ -45,23 +53,32 @@ section.informations{
             }
         }
         
-        h1{
-            font-family: 'Inter';
-            font-size: 3rem;
-            text-transform: uppercase;
-            color: $text;
-        }
     }
 
     h2{
         font-family: 'Inter';
-        font-size: 2rem;
+        font-size: 2.5vh;
         font-weight: 700;
         text-transform: uppercase;
         color: $text;
     }
 
+    .author{
+        display: flex;
+        align-items: center;
+        font-family: 'Inter';
+        font-size: 2.5vh;
+        color: $text;
+
+        a{
+            margin-left: 0.2rem;
+            font-weight: 500;
+            color: $text;
+        }
+    }
+
     .img{
+        margin: 2vh 0vh;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -74,19 +91,7 @@ section.informations{
         }
     }
 
-    .author{
-        display: flex;
-        align-items: center;
-        font-family: 'Inter';
-        font-size: 0.8rem;
-        color: $text;
 
-        a{
-            margin-left: 0.2rem;
-            font-weight: 500;
-            color: $text;
-        }
-    }
 
     .actions{
         display: flex;
