@@ -4,226 +4,244 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+    ::-webkit-scrollbar-track {
+        background-color: #2f284e;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #99e7ff;
+        border-radius: 3rem;
+    }
 }
+
 
 body{
     height: 100vh;
+    scroll-behavior: smooth;
+    stroke-width: 3px;
 }
 
-section.informations{
-    height: 58vh;
-    padding: 0.5rem;
-    padding-top: 0.2rem;
-    background: $background;
-    border-radius: 0rem 0rem 1rem 1rem;
+span.negrito{
+    font-weight: 700;
+}
 
-    header{
-        display: flex;
-        justify-content: space-between;
-
-        h1{
+#home{
+    section.informations{
+        height: 58vh;
+        padding: 0.5rem;
+        padding-top: 0.2rem;
+        background: $background;
+        border-radius: 0rem 0rem 1rem 1rem;
+    
+        header{
+            display: flex;
+            justify-content: space-between;
+    
+            h1{
+                font-family: 'Inter';
+                font-size: 7vh;
+                text-transform: uppercase;
+                color: $text;
+            }
+    
+            nav{
+                margin-top: 0.8vh;
+                
+                button{
+                    height: 2rem;
+                    width: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.1rem;
+                    border-radius: 50%;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+    
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                        
+                        path{
+                            fill: $icon;
+                        }
+                    }
+                }
+            }
+            
+        }
+    
+        h2{
             font-family: 'Inter';
-            font-size: 7vh;
+            font-size: 2.5vh;
+            font-weight: 700;
             text-transform: uppercase;
             color: $text;
         }
-
-        nav{
-            margin-top: 0.8vh;
-            
-            button{
-                height: 2rem;
-                width: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.1rem;
-                border-radius: 50%;
-                border: none;
-                background: none;
-                cursor: pointer;
-
-                svg{
-                    width: 24px;
-                    height: 24px;
-                    
-                    path{
-                        fill: $icon;
-                    }
-                }
-            }
-        }
-        
-    }
-
-    h2{
-        font-family: 'Inter';
-        font-size: 2.5vh;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $text;
-    }
-
-    .author{
-        display: flex;
-        align-items: center;
-        font-family: 'Inter';
-        font-size: 2.5vh;
-        color: $text;
-
-        a{
-            margin-left: 0.2rem;
-            font-weight: 500;
-            color: $text;
-        }
-    }
-
-    .img{
-        margin: 2vh 0vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        svg{
-            margin-top: 1vh;
-            padding: 0.3rem;
-            height: 25vh;
-        }
-    }
-
-
-
-    .actions{
-        display: flex;
-        justify-content: space-between;
-
-        .social-media{
+    
+        .author{
             display: flex;
-
-
-            button{
-                padding: 0.3rem;
-                margin-right: 0.2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: none;
-                border-radius: 50%;
-                border: none;
-                cursor: pointer;
-                background: none;
-
-                svg{
-                    width: 4.8vh;
-                    height: 4.8vh;
-
-                    path{
-                        fill: $icon;
-                    }
-                }
-            }
-
-            button:hover{
-                animation: fly 2s infinite;
-                //background: radial-gradient(circle at center, aqua, transparent 80%);
-            }
-
-            @keyframes fly{
-                50%{
-                    transform: translateY(-0.8vh);
-                }
-            }
-
-            button:hover path{
-                fill: aqua;
-            }
-
-        }
-    }
-
-    .line{
-        width: 100%;
-        height: 0.1rem;
-        background: $icon;
-        margin-top: 1.5vh;
-    }
-
-    .important{
-        height: 7.5vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        h4{
+            align-items: center;
             font-family: 'Inter';
+            font-size: 2.5vh;
+            color: $text;
+    
+            a{
+                margin-left: 0.2rem;
+                font-weight: 500;
+                color: $text;
+            }
+        }
+    
+        .img{
+            margin: 2vh 0vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    
+            svg{
+                margin-top: 1vh;
+                padding: 0.3rem;
+                height: 25vh;
+            }
+        }
+    
+    
+    
+        .actions{
+            display: flex;
+            justify-content: space-between;
+    
+            .social-media{
+                display: flex;
+    
+    
+                button{
+                    padding: 0.3rem;
+                    margin-right: 0.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: none;
+                    border-radius: 50%;
+                    border: none;
+                    cursor: pointer;
+                    background: none;
+    
+                    svg{
+                        width: 4.8vh;
+                        height: 4.8vh;
+    
+                        path{
+                            fill: $icon;
+                        }
+                    }
+                }
+    
+                button:hover{
+                    animation: fly 2s infinite;
+                    //background: radial-gradient(circle at center, aqua, transparent 80%);
+                }
+    
+                @keyframes fly{
+                    50%{
+                        transform: translateY(-0.8vh);
+                    }
+                }
+    
+                button:hover path{
+                    fill: aqua;
+                }
+    
+            }
+        }
+    
+        .line{
+            width: 100%;
+            height: 0.1rem;
+            background: $icon;
+            margin-top: 1.5vh;
+        }
+    
+        .important{
+            height: 7.5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            h4{
+                font-family: 'Inter';
+                font-size: 0.9rem;
+                font-weight: 500;
+                margin-left: 0.2rem;
+                color: $icon;
+            }
+    
+            .read{
+                display: flex;
+                align-items: center;
+                
+                svg{
+                    width: 1.7rem
+                }
+        
+                path{
+                    fill: $icon;
+                }
+        
+            }
+        
+            .scroll{
+                display: flex;
+                align-items: center;
+                
+                svg{
+                    width: 1.7rem
+                }
+        
+                path{
+                    fill: $icon;
+                }
+            }
+        }
+    }
+    
+    section.introduction{
+        height: 42vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
+    
+        h1{
+            font-family: 'Open Sans';
+            text-transform: uppercase;
+            margin-top: 2.5vh;
+            transform: translateY(-0.3vh);
+            color: $background;
+        }
+    
+        p{
+            font-family: 'Open Sans';
             font-size: 0.9rem;
-            font-weight: 500;
-            margin-left: 0.2rem;
-            color: $icon;
-        }
-
-        .read{
-            display: flex;
-            align-items: center;
-            
-            svg{
-                width: 1.7rem
-            }
-    
-            path{
-                fill: $icon;
-            }
-    
-        }
-    
-        .scroll{
-            display: flex;
-            align-items: center;
-            
-            svg{
-                width: 1.7rem
-            }
-    
-            path{
-                fill: $icon;
-            }
+            text-align: justify;
+            color: black;
+            margin-bottom: 2vh;
         }
     }
 }
 
-section.introduction{
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+#front-end{
+    height: 100vh;
+    background: red;
     padding: 0.5rem;
 
-    h1{
-        font-family: 'Open Sans';
-        text-transform: uppercase;
-        margin-bottom: 1vh;
-        color: $background;
-    }
-
-    p{
-        font-family: 'Open Sans';
-        font-size: 0.9rem;
-        text-align: justify;
-        color: black;
-        margin-bottom: 2vh;
-    }
 }
 
-@media (min-width:359px) and (min-height:870px){
-    section.informations{
-        background: red;
 
-        .title{
-            h1{
-                font-size: 1vh;
-            }
-        }
-    }
-
-}
 

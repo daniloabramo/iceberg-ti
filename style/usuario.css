@@ -4,32 +4,48 @@
   padding: 0px;
   box-sizing: border-box;
 }
+* ::-webkit-scrollbar-track {
+  background-color: #2f284e;
+}
+* ::-webkit-scrollbar {
+  width: 5px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #99e7ff;
+  border-radius: 3rem;
+}
 
 body {
   height: 100vh;
+  scroll-behavior: smooth;
+  stroke-width: 3px;
 }
 
-section.informations {
+span.negrito {
+  font-weight: 700;
+}
+
+#home section.informations {
   height: 58vh;
   padding: 0.5rem;
   padding-top: 0.2rem;
   background: #255fef;
   border-radius: 0rem 0rem 1rem 1rem;
 }
-section.informations header {
+#home section.informations header {
   display: flex;
   justify-content: space-between;
 }
-section.informations header h1 {
+#home section.informations header h1 {
   font-family: "Inter";
   font-size: 7vh;
   text-transform: uppercase;
   color: white;
 }
-section.informations header nav {
+#home section.informations header nav {
   margin-top: 0.8vh;
 }
-section.informations header nav button {
+#home section.informations header nav button {
   height: 2rem;
   width: 2rem;
   display: flex;
@@ -41,51 +57,51 @@ section.informations header nav button {
   background: none;
   cursor: pointer;
 }
-section.informations header nav button svg {
+#home section.informations header nav button svg {
   width: 24px;
   height: 24px;
 }
-section.informations header nav button svg path {
+#home section.informations header nav button svg path {
   fill: white;
 }
-section.informations h2 {
+#home section.informations h2 {
   font-family: "Inter";
   font-size: 2.5vh;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
 }
-section.informations .author {
+#home section.informations .author {
   display: flex;
   align-items: center;
   font-family: "Inter";
   font-size: 2.5vh;
   color: white;
 }
-section.informations .author a {
+#home section.informations .author a {
   margin-left: 0.2rem;
   font-weight: 500;
   color: white;
 }
-section.informations .img {
+#home section.informations .img {
   margin: 2vh 0vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-section.informations .img svg {
+#home section.informations .img svg {
   margin-top: 1vh;
   padding: 0.3rem;
   height: 25vh;
 }
-section.informations .actions {
+#home section.informations .actions {
   display: flex;
   justify-content: space-between;
 }
-section.informations .actions .social-media {
+#home section.informations .actions .social-media {
   display: flex;
 }
-section.informations .actions .social-media button {
+#home section.informations .actions .social-media button {
   padding: 0.3rem;
   margin-right: 0.2rem;
   display: flex;
@@ -97,14 +113,14 @@ section.informations .actions .social-media button {
   cursor: pointer;
   background: none;
 }
-section.informations .actions .social-media button svg {
+#home section.informations .actions .social-media button svg {
   width: 4.8vh;
   height: 4.8vh;
 }
-section.informations .actions .social-media button svg path {
+#home section.informations .actions .social-media button svg path {
   fill: white;
 }
-section.informations .actions .social-media button:hover {
+#home section.informations .actions .social-media button:hover {
   animation: fly 2s infinite;
 }
 @keyframes fly {
@@ -112,63 +128,63 @@ section.informations .actions .social-media button:hover {
     transform: translateY(-0.8vh);
   }
 }
-section.informations .actions .social-media button:hover path {
+#home section.informations .actions .social-media button:hover path {
   fill: aqua;
 }
-section.informations .line {
+#home section.informations .line {
   width: 100%;
   height: 0.1rem;
   background: white;
   margin-top: 1.5vh;
 }
-section.informations .important {
+#home section.informations .important {
   height: 7.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section.informations .important h4 {
+#home section.informations .important h4 {
   font-family: "Inter";
   font-size: 0.9rem;
   font-weight: 500;
   margin-left: 0.2rem;
   color: white;
 }
-section.informations .important .read {
+#home section.informations .important .read {
   display: flex;
   align-items: center;
 }
-section.informations .important .read svg {
+#home section.informations .important .read svg {
   width: 1.7rem;
 }
-section.informations .important .read path {
+#home section.informations .important .read path {
   fill: white;
 }
-section.informations .important .scroll {
+#home section.informations .important .scroll {
   display: flex;
   align-items: center;
 }
-section.informations .important .scroll svg {
+#home section.informations .important .scroll svg {
   width: 1.7rem;
 }
-section.informations .important .scroll path {
+#home section.informations .important .scroll path {
   fill: white;
 }
-
-section.introduction {
-  height: 40vh;
+#home section.introduction {
+  height: 42vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
 }
-section.introduction h1 {
+#home section.introduction h1 {
   font-family: "Open Sans";
   text-transform: uppercase;
-  margin-bottom: 1vh;
+  margin-top: 2.5vh;
+  transform: translateY(-0.3vh);
   color: #255fef;
 }
-section.introduction p {
+#home section.introduction p {
   font-family: "Open Sans";
   font-size: 0.9rem;
   text-align: justify;
@@ -176,11 +192,8 @@ section.introduction p {
   margin-bottom: 2vh;
 }
 
-@media (min-width: 359px) and (min-height: 870px) {
-  section.informations {
-    background: red;
-  }
-  section.informations .title h1 {
-    font-size: 1vh;
-  }
+#front-end {
+  height: 100vh;
+  background: red;
+  padding: 0.5rem;
 }/*# sourceMappingURL=usuario.css.map */
