@@ -14,8 +14,8 @@
                   <div class="title">
                     <h1>Iceberg TI</h1>
                     <div class="author">
-                      <h2>Autor:</h2>
-                      <a href="https://www.linkedin.com/in/danilo-abramo/" target="_blank" title="entrar em contato">Danilo Abramowicz</a>
+                      <h2>experiência interativa:</h2>
+                      <!--<a href="https://www.linkedin.com/in/danilo-abramo/" target="_blank" title="entrar em contato">Danilo Abramowicz</a>-->
                   </div>
                 </div>
                   <nav><button>
@@ -129,21 +129,21 @@
           </p>
         </section>
 
-        <div id="interface">
+        <div class="interface">
           <h1>Indice</h1>
           <section class="indice">
               <ul>
                 <li><a href="#home">Introdução</a></li>
                 <li><a href="#interface">Interface</a></li>
-                <li>Front End</li>
-                <li>Back End</li>
+                <li><a href="#front-end">Front End</a></li>
+                <li><a href="#back-end">Back End</a></li>
                 <li>Sistema Operacional</li>
                 <li>Hadware</li>
               </ul>
           </section>
 
-          <h1>Interface</h1>
           <section class="interface">
+            <h1 id="interface">Interface</h1>
             <p>Uma interface é um ponto de interação ou comunicação entre dois sistemas, dispositivos ou entidades, permitindo que eles atuem ou se comuniquem entre si.</p>
 
             <h2>Ux</h2>
@@ -179,7 +179,7 @@
               
                   <div class="buttons">
                     <button type="button" id="autoComplete">Auto Complete</button>
-                    <button type="button" id="animateFrontEnd">Cadastrar</button>
+                    <button type="button" class="animateTransition" class="animateFrontEnd">Cadastrar</button>
                   </div>
                 </section>
               </div>
@@ -187,15 +187,100 @@
             <script src="/script/form-name.js"></script>
           </section>
 
-          <div class="animate-frontend">
-            
+          <div id="animation" style="display:none;" class="animate-frontend">
+            <p>sssssss</p>
           </div>
 
-          <section id="#front-end">
+          <section id="front-end">
+            <h1>Front End</h1>
+            <p>O front-end é o responsável pelo visual do site, sem ele os sites seriam apenas blocos cinzas.</p>
+            <p>É formado por arquivos html com tags html que definem a estrutura dos elementos, css que utilizam os elementos e javascript que realiza as interações dos elementos com o usuário.</p>
+            <h2>html</h2>
+            <p>	O html é responsável por definir a estrutura dos elementos com tags html, no caso de um formulário temos a tag <span class="code">&lt;form&gt;</span> para exibi lo. Tags como <span class="code">&lt;input&gt;</span> trabalham juntos com atributos de type (tipo), ex. <span class="code">type=”text”</span> pode ser usado para definir um campo de texto, ou ser mais específico utilizando o <span class="code">type="email"</span> que configura o campo de dados a enviar para o banco de dados apenas sequência de caracteres correspondente a email válidos, ex <span class="code">exemplo@gmail.com</span>.</p>
+            <p>O  <span class="code">&lt;button&gt;</span> com <span class="code">&lt;type="submit"&gt;</span> envia os dados para o servidor.</p>
+            
+
+            <div class="email-center">
+              <div class="form-email">
+                <form>
+                  <div class="email">
+                    <h3>Tente digitar um email <span class="erro">errado</span></h3>
+                    <label for="email">*Email:</label>
+                    <input type="email" id="emailInput" name="email" placeholder="Digite um email">
+                    <!--<div class="emoji">
+                      <h2 id="emailStatus">🙄</h2>
+                      <p>Pressione enter <span class="bold">↩</span></p>
+                    </div> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="css">
+              <h2>css</h2>
+              <p>O arquivo css utiliza propriedades para estilizar elementos html, e para que a estilização seja aplicada é necessário referenciar no html o arquivo css.</p>
+              <p> <span class="code">&lt;link rel="stylesheet" href="style.css">&gt;</span> </p>
+              <p>As propriedades css são responsáveis por definir por exemplo cores que em sua maioria são representadas com sequências hexadecimais, tamanho de elementos,
+                fontes, maneiras de como os elementos irão se posicionar, responsividade e interações básicas com o usuário dado ao passar o mouse em cima ou clicar no botão e tendo
+                como resultado a mudança de cor ou a execução de uma animação.
+              </p>
+
+              <div class="css-center">
+                <div class="custom-button">
+                  <h3>Descore Seu botão</h3>
+                  <button>≧◉ᴥ◉≦</button>
+                </div>
+                <form action=""></form>
+              </div>
+
+              <div class="css-code">
+                <h4><span class="green">button {</span></h4>
+                <h4><span class="pink">background: red</span></h4>
+                <h4><span class="green">}</span></h4>
+              </div>
+
+              <div class="css-center">
+                <div class="css-custom">
+                  <button>Fonte</button>
+                  <button>Cor</button>
+                  <button>Borda</button>
+                  <button>Conteúdo</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="js">
+              <h2>js</h2>
+              <p>Arquivos javascript são aquele responsáveis por criar interações entre elementos e ações do usuário no exemplo anterior os botões que alteram as propriedades css se utilizam do js para poder modificar as propriedades css de elementos pré determinados.</p>
+              <p>Juntos com o elemento X, a criatividade, temos o front end de uma página web.</p>
+            </div>
           </section>
 
+          <section id="back-end">
+            <h1>Back end</h1>
+            <p>Quando se clica no botão que tem o tipo submit (enviar) após preencher todos campos, os dados são enviados para um servidor que realiza etapas de validação e verificação antes de serem enviados para o banco de dados, por exemplo:</p>
+            <p>Garante que estejam no formato correto;</p>
+            <p>Compara com os dados existentes para não haver duplicação;</p>
+            <p>Verifica se os dados não são um ataque com scripts maliciosos ou injeção SQL.</p>
+            <p>Se não for o caso de nenhum desses cenários os dados são inseridos dentro de uma tabela do banco de dados SQL.</p>
+            <p>Por exemplo os dados que inseriu no primeiro formulario:</p>
+          </section>
+
+          <section id="sistema-operacional"></section>
         </div>
+
+
+
+        <!--<button class="animateTransition" class="animateFrontEnd">
+          <p>Front</p>
+        </button>
+
+        <button class="animateTransition" class="animateBackEnd">
+          <p>Back</p>
+        </button>
+        -->
     </main>
+    <script src="/script/animate-transition.js"></script>
     
 </body>
 </html>

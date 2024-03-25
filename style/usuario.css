@@ -25,6 +25,29 @@ span.bold {
   font-weight: 700;
 }
 
+span.green {
+  color: #5dff85;
+}
+
+span.pink {
+  color: #ff9dd4;
+}
+
+span.code {
+  padding: 0rem;
+  background: #282A36;
+  color: white;
+  padding: 0rem 0.3rem;
+  border-radius: 0.4rem;
+  font-weight: 450;
+}
+
+span.erro {
+  color: red;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
 h1 {
   font-family: "Inter";
   font-size: 4.3vh;
@@ -42,8 +65,9 @@ h2 {
 p {
   font-family: "DM Sans";
   font-size: 1rem;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   margin-bottom: 2vh;
+  line-height: 1.6;
 }
 
 #home section.informations {
@@ -204,35 +228,36 @@ section.introduction .pre-index {
   margin-bottom: 0px;
 }
 
-#interface {
+.interface {
   height: auto;
   background: white;
   padding: 0.6rem;
   padding-top: 0.1rem;
 }
-#interface section.indice {
+.interface section.indice {
   background: rgb(219, 230, 255);
   font-family: "Inter";
   font-weight: 500;
   margin-bottom: 2vh;
 }
-#interface section.indice ul {
+.interface section.indice ul {
   list-style-image: url("/images/tabcoin-opaco.svg");
   padding: 0.5rem;
   padding-bottom: 0rem;
   margin-left: 0.5rem;
 }
-#interface section.indice a:active {
+.interface section.indice a:active {
   color: red;
 }
-#interface .center {
+.interface .center {
   display: flex;
   justify-content: center;
   padding-bottom: 0.8rem;
 }
-#interface .center .form-design {
+.interface .center .form-design {
   width: 90%;
   padding: 1rem;
+  margin-bottom: 4.5vh;
   background: white;
   display: flex;
   flex-direction: column;
@@ -242,21 +267,21 @@ section.introduction .pre-index {
   border: 1px solid #255fef;
   box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
 }
-#interface .center .form-design h3 {
+.interface .center .form-design h3 {
   font-family: "Inter";
   font-size: 0.9rem;
   font-weight: 600;
   margin: 0.5rem;
   text-align: center;
 }
-#interface .center .form-design h4 {
+.interface .center .form-design h4 {
   color: black;
   font-family: "Inter";
   font-size: 0.92rem;
   font-weight: 450;
   padding-bottom: 0.2rem;
 }
-#interface .center .form-design .input {
+.interface .center .form-design .input {
   display: flex;
   align-items: center;
   height: 1.8rem;
@@ -265,26 +290,26 @@ section.introduction .pre-index {
   border: 2px solid #255fef;
   cursor: not-allowed;
 }
-#interface .center .form-design .input h5 {
+.interface .center .form-design .input h5 {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 0.9rem;
   color: rgb(46, 46, 46);
 }
-#interface .center .form-design .email {
+.interface .center .form-design .email {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-#interface .center .form-design .senha {
+.interface .center .form-design .senha {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-#interface .center .form-design .buttons {
+.interface .center .form-design .buttons {
   display: flex;
 }
-#interface .center .form-design .buttons button {
+.interface .center .form-design .buttons button {
   width: 18vh;
   height: 6vh;
   margin-top: 0.3rem;
@@ -295,9 +320,154 @@ section.introduction .pre-index {
   font-weight: 450;
   color: white;
 }
-#interface .center .form-design .buttons button:hover {
+.interface .center .form-design .buttons button:hover {
   background: #1d45ac;
 }
-#interface .center .form-design #autoComplete {
+.interface .center .form-design #autoComplete {
   margin-right: 1rem;
+}
+
+#front-end {
+  height: auto;
+}
+#front-end .email-center {
+  display: flex;
+  justify-content: center;
+  /*.emoji{
+      padding: 0.5rem 0rem 0rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      h2{
+          font-size: 3rem;
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+      }
+
+      span.bold{
+          font-size: 1rem;
+      }
+  } */
+}
+#front-end .email-center .form-email {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 4.5vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  border: 1px solid #255fef;
+  box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
+  padding: 1rem 1rem 1.8rem 1rem;
+}
+#front-end .email-center .form-email .email {
+  display: flex;
+  flex-direction: column;
+}
+#front-end .email-center .form-email .email h3 {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  text-align: center;
+}
+#front-end .email-center .form-email .email label {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(46, 46, 46);
+  margin-bottom: 0.3rem;
+}
+#front-end .email-center .form-email .email input {
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  border: 2px solid #255fef;
+}
+#front-end .css-center {
+  display: flex;
+  justify-content: center;
+}
+#front-end .css-center .custom-button {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 4.5vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  border: 1px solid #255fef;
+  box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
+}
+#front-end .css-center .custom-button h3 {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  text-align: center;
+}
+#front-end .css-center .custom-button button {
+  background: gray;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 50rem;
+  border: none;
+}
+#front-end .css-center .custom-button button:hover {
+  background: rgb(255, 178, 178);
+}
+#front-end .css-code {
+  padding: 0.6rem;
+  background: #282A36;
+  border-radius: 0.5rem;
+  margin-bottom: 4.5vh;
+}
+#front-end .css-code h4 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  color: white;
+}
+#front-end .css-center .css-custom {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 4.5vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  border: 1px solid #255fef;
+  box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
+  flex-direction: inherit;
+}
+#front-end .css-center button {
+  margin: 0rem 0.6rem;
+}
+
+.animate-frontend {
+  background: #000;
+  height: 100vh;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  padding: 0.6rem;
+}
+.animate-frontend p {
+  color: white;
 }/*# sourceMappingURL=usuario.css.map */
