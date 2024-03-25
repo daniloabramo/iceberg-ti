@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Mega:wght@700;800;900&family=Open+Sans:wght@300..800&family=Outfit:wght@100&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lexend+Mega&family=Open+Sans:wght@300..800&family=Outfit:wght@100..900&family=Share+Tech+Mono&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -21,8 +21,29 @@ body {
   stroke-width: 3px;
 }
 
-span.negrito {
+span.bold {
   font-weight: 700;
+}
+
+h1 {
+  font-family: "Inter";
+  font-size: 4.3vh;
+  text-transform: uppercase;
+  color: #255fef;
+}
+
+h2 {
+  font-family: "Inter";
+  font-size: 3.5vh;
+  text-transform: uppercase;
+  color: #255fef;
+}
+
+p {
+  font-family: "DM Sans";
+  font-size: 1rem;
+  color: rgb(255, 0, 0);
+  margin-bottom: 2vh;
 }
 
 #home section.informations {
@@ -171,36 +192,26 @@ span.negrito {
 #home section.informations .important .scroll path {
   fill: white;
 }
-#home section.introduction {
-  height: 42vh;
+
+section.introduction {
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  background: white;
 }
-#home section.introduction h1 {
-  font-family: "Open Sans";
-  text-transform: uppercase;
-  font-size: 4.3vh;
-  margin-top: 2.5vh;
-  transform: translateY(-0.3vh);
-  color: #255fef;
-}
-#home section.introduction p {
-  font-family: "Open Sans";
-  font-size: 0.9rem;
-  text-align: justify;
-  color: black;
-  margin-bottom: 2vh;
+section.introduction .pre-index {
+  margin-bottom: 0px;
 }
 
 #interface {
-  height: 200vh;
+  height: auto;
   background: white;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  padding-top: 0.1rem;
 }
 #interface section.indice {
-  background: rgb(163, 163, 255);
+  background: rgb(219, 230, 255);
   font-family: "Inter";
   font-weight: 500;
   margin-bottom: 2vh;
@@ -208,35 +219,18 @@ span.negrito {
 #interface section.indice ul {
   list-style-image: url("/images/tabcoin-opaco.svg");
   padding: 0.5rem;
+  padding-bottom: 0rem;
   margin-left: 0.5rem;
 }
 #interface section.indice a:active {
   color: red;
 }
-#interface h1 {
-  font-family: "Inter";
-  font-size: 4.3vh;
-  text-transform: uppercase;
-  color: #255fef;
-}
-#interface h2 {
-  font-family: "Inter";
-  font-size: 3.5vh;
-  text-transform: uppercase;
-  color: #255fef;
-}
-#interface p {
-  font-family: "Open Sans";
-  font-size: 0.9rem;
-  text-align: justify;
-  color: black;
-  margin-bottom: 2vh;
-}
 #interface .center {
   display: flex;
   justify-content: center;
+  padding-bottom: 0.8rem;
 }
-#interface .center .form {
+#interface .center .form-design {
   width: 90%;
   padding: 1rem;
   background: white;
@@ -248,40 +242,49 @@ span.negrito {
   border: 1px solid #255fef;
   box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
 }
-#interface .center .form h3 {
+#interface .center .form-design h3 {
   font-family: "Inter";
   font-size: 0.9rem;
   font-weight: 600;
   margin: 0.5rem;
   text-align: center;
 }
-#interface .center .form label {
+#interface .center .form-design h4 {
   color: black;
   font-family: "Inter";
   font-size: 0.92rem;
   font-weight: 450;
   padding-bottom: 0.2rem;
 }
-#interface .center .form input {
+#interface .center .form-design .input {
+  display: flex;
+  align-items: center;
   height: 1.8rem;
   padding: 0.3rem;
   border-radius: 0.4rem;
   border: 2px solid #255fef;
+  cursor: not-allowed;
 }
-#interface .center .form .email {
+#interface .center .form-design .input h5 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(46, 46, 46);
+}
+#interface .center .form-design .email {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-#interface .center .form .senha {
+#interface .center .form-design .senha {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-#interface .center .form .buttons {
+#interface .center .form-design .buttons {
   display: flex;
 }
-#interface .center .form .buttons button {
+#interface .center .form-design .buttons button {
   width: 18vh;
   height: 6vh;
   margin-top: 0.3rem;
@@ -292,9 +295,9 @@ span.negrito {
   font-weight: 450;
   color: white;
 }
-#interface .center .form .buttons button:hover {
+#interface .center .form-design .buttons button:hover {
   background: #1d45ac;
 }
-#interface .center .form #preencherCampos {
+#interface .center .form-design #autoComplete {
   margin-right: 1rem;
 }/*# sourceMappingURL=usuario.css.map */

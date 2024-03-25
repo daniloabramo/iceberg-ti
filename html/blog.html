@@ -30,7 +30,7 @@
                           </defs>
                         </svg>
                   </button></nav>
-                </header>
+              </header>
               <div class="img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="194" height="199" viewBox="0 0 194 199" fill="none">
                       <g clip-path="url(#clip0_1209_3754)">
@@ -120,14 +120,14 @@
                   </div>
               </div>
           </section>
-          <section class="introduction">
-            
-            <h1>Introdução</h1>
-            <p>Já se perguntou o que está ocorrendo dentro deste pequeno objeto para que o texto que lê seja exibido? Quais processos lógicos e elétricos ocorrem? E o que acontece com os dados que preenchemos em diferentes cadastros?</p>
-            <p>Iremos abordar como funciona que vemos e interagimos até ao 0 e 1 enviado pelos componentes eletrônicos, tudo em uma experiência <span class="negrito">interativa</span>. 
-            </p>
-          </section>
         </div>
+
+        <section class="introduction">
+          <h1>Introdução</h1>
+          <p>Já se perguntou o que está ocorrendo dentro deste pequeno objeto para que o texto que lê seja exibido? Quais processos lógicos e elétricos ocorrem? E o que acontece com os dados que preenchemos em diferentes cadastros?</p>
+          <p class="pre-index">Iremos abordar como funciona que vemos e interagimos até ao 0 e 1 enviado pelos componentes eletrônicos, tudo em uma experiência <span class="bold">interativa</span>. 
+          </p>
+        </section>
 
         <div id="interface">
           <h1>Indice</h1>
@@ -160,29 +160,38 @@
             <p>Preencha o formulario clicando nos botoes para avançarmos para as camadas desconhecidas para o usuário. </p>
 
             <div class="center">
-              <div class="form">
+              <div class="form-design">
                 <h3>Dados apenas ilustrativos</h3>
-                <form>
+                <section class="form">
                   <div class="email">
-                    <label for="email">*Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Click no Auto Complete">
+                    <h4>*Email:</h4>
+                    <div class="input">
+                      <h5 id="email">Click no Auto Complete</h5>
+                    </div>
                   </div>
               
                   <div class="senha">
-                    <label for="senha">*Senha:</label>
-                    <input type="password" id="senha" name="senha"  placeholder="Click no Auto Complete">
+                    <h4>*Senha:</h4>
+                    <div class="input">
+                      <h5 id="senha">Click no Auto Complete</h5>
+                    </div>
                   </div>
               
                   <div class="buttons">
-                    <button type="button" id="preencherCampos">Auto Complete</button>
-                    <button type="button" id="animation-front-end">Cadastrar</button>
+                    <button type="button" id="autoComplete">Auto Complete</button>
+                    <button type="button" id="animateFrontEnd">Cadastrar</button>
                   </div>
-                 </form>
+                </section>
               </div>
-            </div>   
-
+            </div>  
             <script src="/script/form-name.js"></script>
+          </section>
 
+          <div class="animate-frontend">
+            
+          </div>
+
+          <section id="#front-end">
           </section>
 
         </div>
