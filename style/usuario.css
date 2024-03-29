@@ -527,10 +527,38 @@ section.introduction .pre-index {
   padding: 0.6rem;
   color: white;
 }
+#hadware .background .self {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.3rem;
+  border-radius: 0.1rem;
+  background: yellow;
+}
+#hadware .background .self button {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  border: 3px solid hsl(219, 100%, 81%);
+  background: white;
+  box-shadow: 0px -2px 20px -5px rgb(2, 85, 238);
+  cursor: pointer;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+#hadware .background .self button img {
+  width: 2rem;
+  height: 2rem;
+}
 #hadware .background .components {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 #hadware .background .components button {
   margin: 1rem;
@@ -550,10 +578,35 @@ section.introduction .pre-index {
 }
 #hadware .background .components .chip {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.1rem;
 }
 #hadware .background .components .chip button {
-  width: 5rem;
-  margin: 0.5rem;
+  width: 3.5rem;
+  height: 5rem;
+  margin: 0.1rem 1rem;
+}
+#hadware .background .components .chip button img {
+  width: 2.5rem;
+  height: 4.1rem;
+}
+#hadware .background .components .camera {
+  display: flex;
+  margin: 0.3rem;
+}
+#hadware .background .components .camera button {
+  width: 3rem;
+  height: 3rem;
+}
+#hadware .background .components .camera button img {
+  width: 2rem;
+  height: 2rem;
+}
+#hadware .background .components .camera .cam1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 #hadware .background .battery {
   display: flex;
