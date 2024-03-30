@@ -518,9 +518,15 @@ section.introduction .pre-index {
   border: 2px solid black;
 }
 
+/*-webkit-box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);
+-moz-box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);
+box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);*/
+#hadware {
+  height: auto;
+}
 #hadware .background {
   background: #282A36;
-  padding: 0px;
+  padding: 0rem 0.5rem;
   height: 100vh;
 }
 #hadware .background h1 {
@@ -528,106 +534,134 @@ section.introduction .pre-index {
   color: white;
 }
 #hadware .background .self {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 2.3rem;
-  border-radius: 0.1rem;
-  background: yellow;
+  height: 3rem;
+  padding: 0rem 0.5rem;
 }
 #hadware .background .self button {
-  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
-  height: 8rem;
   border-radius: 1rem;
   border: 3px solid hsl(219, 100%, 81%);
   background: white;
-  box-shadow: 0px -2px 20px -5px rgb(2, 85, 238);
   cursor: pointer;
-  height: 2.3rem;
-  width: 2.3rem;
+  width: 100%;
+  margin: 0rem;
 }
 #hadware .background .self button img {
   width: 2rem;
   height: 2rem;
+  padding: 0.3rem;
+}
+#hadware .background .self button:hover {
+  border: 3px solid rgb(177, 233, 255);
+  box-shadow: 0px -2px 20px -5px rgb(133, 176, 255);
 }
 #hadware .background .components {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
 }
-#hadware .background .components button {
-  margin: 1rem;
+#hadware .background .components .line1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 14vh;
+}
+#hadware .background .components .line1 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
-  height: 8rem;
   border-radius: 1rem;
   border: 3px solid hsl(219, 100%, 81%);
   background: white;
-  box-shadow: 0px -2px 20px -5px rgb(2, 85, 238);
   cursor: pointer;
+  width: 47%;
+  height: 14vh;
+  padding: 0.3rem;
 }
-#hadware .background .components button img {
-  width: 6rem;
+#hadware .background .components .line1 button img {
+  width: 50%;
+  height: 90%;
 }
-#hadware .background .components .chip {
+#hadware .background .components .line2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.1rem;
+  justify-content: space-between;
+  width: 100%;
+  height: 16vh;
+  margin-top: 1rem;
 }
-#hadware .background .components .chip button {
-  width: 3.5rem;
-  height: 5rem;
-  margin: 0.1rem 1rem;
-}
-#hadware .background .components .chip button img {
-  width: 2.5rem;
-  height: 4.1rem;
-}
-#hadware .background .components .camera {
-  display: flex;
-  margin: 0.3rem;
-}
-#hadware .background .components .camera button {
-  width: 3rem;
-  height: 3rem;
-}
-#hadware .background .components .camera button img {
-  width: 2rem;
-  height: 2rem;
-}
-#hadware .background .components .camera .cam1 {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-#hadware .background .battery {
-  display: flex;
-  justify-content: center;
-}
-#hadware .background .battery button {
-  margin: 1rem;
+#hadware .background .components .line2 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
-  height: 8rem;
   border-radius: 1rem;
   border: 3px solid hsl(219, 100%, 81%);
   background: white;
-  box-shadow: 0px -2px 20px -5px rgb(2, 85, 238);
   cursor: pointer;
-  width: 80%;
+  width: 47%;
+  height: 16vh;
+  padding: 0.3rem;
 }
-#hadware .background .battery button img {
-  width: 6rem;
+#hadware .background .components .line2 button img {
+  width: 70%;
+  height: 90%;
+}
+#hadware .background .components .line3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20vh;
+  margin-top: 1rem;
+}
+#hadware .background .components .line3 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 3px solid hsl(219, 100%, 81%);
+  background: white;
+  cursor: pointer;
+  width: 47%;
+  height: 20vh;
+  padding: 0.3rem;
+}
+#hadware .background .components .line3 button img {
+  width: 70%;
+  height: 90%;
+}
+#hadware .background .components .line4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 22vh;
+  margin-top: 1rem;
+}
+#hadware .background .components .line4 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 3px solid hsl(219, 100%, 81%);
+  background: white;
+  cursor: pointer;
+  width: 100%;
+  height: 22vh;
+  padding: 0.3rem;
+}
+#hadware .background .components .line4 button img {
+  width: 70%;
+  height: 90%;
+}
+#hadware .background .components button:hover {
+  border: 3px solid rgb(177, 233, 255);
+  box-shadow: 0px -2px 20px -5px rgb(133, 176, 255);
+}
+#hadware .background div.space {
+  height: 1rem;
 }
 
 .animate-frontend {
