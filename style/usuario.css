@@ -21,6 +21,10 @@ body {
   stroke-width: 3px;
 }
 
+.text {
+  padding: 0.5rem;
+}
+
 span.bold {
   font-weight: 700;
 }
@@ -266,6 +270,7 @@ section.introduction .pre-index {
   border-radius: 2vh;
   border: 1px solid #255eef;
   box-shadow: 0px 5px 11px 0px rgba(37, 95, 239, 0.6);
+  text-align: center;
 }
 .interface .center .form-design h3 {
   font-family: "Inter";
@@ -274,43 +279,43 @@ section.introduction .pre-index {
   margin: 0.5rem;
   text-align: center;
 }
-.interface .center .form-design h4 {
+.interface .center .form-design .form {
+  width: 90%;
+  padding-bottom: 0.5rem;
+}
+.interface .center .form-design .form h4 {
   color: black;
   font-family: "Inter";
   font-size: 0.92rem;
   font-weight: 450;
   padding-bottom: 0.2rem;
 }
-.interface .center .form-design .input {
+.interface .center .form-design .form .input {
   display: flex;
-  align-items: center;
+  margin-bottom: 0.5rem;
   height: 1.8rem;
   padding: 0.3rem;
   border-radius: 0.4rem;
   border: 2px solid #255eef;
   cursor: not-allowed;
 }
-.interface .center .form-design .input h5 {
+.interface .center .form-design .form .input h5 {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 0.9rem;
   color: rgb(46, 46, 46);
 }
-.interface .center .form-design .email {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
+.interface .center .form-design .form .email {
+  text-align: start;
 }
-.interface .center .form-design .senha {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
+.interface .center .form-design .form .senha {
+  text-align: start;
 }
-.interface .center .form-design .buttons {
+.interface .center .form-design .form .buttons {
   display: flex;
 }
-.interface .center .form-design .buttons button {
-  width: 18vh;
+.interface .center .form-design .form .buttons button {
+  width: 50%;
   height: 6vh;
   margin-top: 0.3rem;
   border-radius: 0.4rem;
@@ -320,10 +325,10 @@ section.introduction .pre-index {
   font-weight: 450;
   color: white;
 }
-.interface .center .form-design .buttons button:hover {
+.interface .center .form-design .form .buttons button:hover {
   background: #1d45ac;
 }
-.interface .center .form-design #autoComplete {
+.interface .center .form-design .form .buttons #autoComplete {
   margin-right: 1rem;
 }
 
@@ -521,6 +526,11 @@ section.introduction .pre-index {
 /*-webkit-box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);
 -moz-box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);
 box-shadow: 0px -2px 20px -5px rgba(2,85,238,1);*/
+.space-hadware {
+  height: 2rem;
+  background-image: url(/icons/gradient.svg);
+}
+
 #hadware {
   height: auto;
 }

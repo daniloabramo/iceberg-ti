@@ -95,7 +95,7 @@
                         </svg>
                       </button>
                   </div>
-                  <button onclick="">Dark</button>
+                  <button onclick="">Tt</button>
               </div>
               <div class="line"></div>
               <div class="important">
@@ -139,6 +139,7 @@
                 <li><a href="#back-end">Back End</a></li>
                 <li><a href="#sistema-operacional">Sistema Operacional</a></li>
                 <li><a href="#hadware">Hadware</a></li>
+                <li><a href="">Conclusão</a></li>
               </ul>
           </section>
 
@@ -305,39 +306,62 @@
           </section>
         </div>
 
+        <div class="space-hadware"></div>
         <section id="hadware">
           <div class="background">
             <h1>hadware</h1>
             
             <div class="self">
-              <button><img src="/icons/cam.svg" alt=""><h2>camêra</h2></button>
+              <button onclick="scrollToElement('camera-self')"><img src="/icons/cam.svg" alt=""><h2>camêra</h2></button>
             </div>
 
             <div class="components">
               <div class="line1">
-                <button><img src="/icons/chip.svg" alt=""><img src="/icons/chip.svg" alt=""></button>
-                <button><img src="/icons/cam.svg" alt=""></button>
+                <button onclick="scrollToElement('chip')"><img src="/icons/chip.svg" alt=""><img src="/icons/chip.svg" alt=""></button>
+                
+                <button onclick="scrollToElement('camera-frontal')"><img src="/icons/cam.svg" alt=""></button>
               </div>
 
               <div class="line2">
-                <button><img src="/icons/ram.svg" alt=""></button>
-                <button><img src="/icons/gpu.svg" alt=""></button>
+                <button onclick="scrollToElement('ram')"><img src="/icons/ram.svg" alt=""></button>
+                <button onclick="scrollToElement('gpu')"><img src="/icons/gpu.svg" alt=""></button>
               </div>
 
               <div class="line3">
-                <button><img src="/icons/cpu.svg" alt=""></button>
-                <button><img src="/icons/ssd.svg" alt=""></button>
+                <button onclick="scrollToElement('cpu')"><img src="/icons/cpu.svg" alt=""></button>
+                <button onclick="scrollToElement('ssd')"><img src="/icons/ssd.svg" alt=""></button>
               </div>
 
               <div class="line4">
-                <button><img src="/icons/battery.svg" alt=""></button>
+                <button onclick="scrollToElement('battery')"><img src="/icons/battery.svg" alt=""></button>
               </div>
           </div>
-          <div class="space"></div>
-          <h2>componentes</h2>
-          <p>os são sjajddaspasdásd</p>
-          <h2>chip:</h2>
         </section>
+
+        <div class="space-hadware"></div>
+
+        <div class="text">
+          <h2>componentes</h2>
+          <p>Os componentes físicos do hardware é que definem a quantidade de memória e de processamento que seu dispositivo terá no total.</p>
+          <h2 id="camera-self">camera self</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="chip">chip Sim</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="camera-frontal">camera frontal</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="ram">memória ram</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="gpu">gpu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="cpu">cpu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="ssd">ssd</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="battery">bateria</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h2 id="cooler">cooler</h2>
+          <p>Diferente dos computadores que contém um componentes específico para resfriar o restante das peças, os dispositivos mobile tem sua estrutura e materiais pensados cuidadosamente para garantir a execução de processos com a menor temperatura</p>
+        </div>
 
 
 
@@ -351,6 +375,7 @@
         -->
     </main>
     <script src="/script/animate-transition.js"></script>
+    <script src="/script/scroll-id.js"></script>
     
 </body>
 </html>
