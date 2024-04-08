@@ -162,13 +162,16 @@ p {
 #home section.informations header nav button {
   height: 2rem;
   width: 2rem;
+  position: fixed;
+  right: 0;
+  margin-right: 0.5rem;
+  background: #255eef;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.1rem;
   border-radius: 50%;
   border: none;
-  background: none;
   cursor: pointer;
 }
 #home section.informations header nav button svg {
@@ -488,11 +491,13 @@ section.introduction .pre-index {
   text-align: center;
 }
 #front-end .css-center .custom-button button {
-  background: gray;
+  background: rgb(209, 209, 209);
   font-family: "Inter";
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   border-radius: 50rem;
+  width: 10rem;
+  height: 3rem;
   border: none;
 }
 #front-end .css-center .custom-button button:hover {

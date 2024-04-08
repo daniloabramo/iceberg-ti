@@ -181,14 +181,18 @@ p{
                 button{
                     height: 2rem;
                     width: 2rem;
+                    position: fixed;
+                    right: 0;
+                    margin-right: 0.5rem;
+                    background: $background;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 0.1rem;
                     border-radius: 50%;
                     border: none;
-                    background: none;
                     cursor: pointer;
+
     
                     svg{
                         width: 24px;
@@ -200,7 +204,6 @@ p{
                     }
                 }
             }
-            
         }
     
         h2{
@@ -552,11 +555,13 @@ section.introduction{
             }
 
             button{
-                background: gray;
+                background: rgb(209, 209, 209);
                 font-family: 'Inter';
                 font-size: 1.5rem;
                 padding: 0.5rem 2rem;
                 border-radius: 50rem;
+                width: 10rem;
+                height: 3rem;
                 border: none;
             }
 
